@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br>
+
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email"><br>
+        
+        <p>Enter your gender?</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">M</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">F</label>
+        <input type="radio" id="other" name="gender" value="others">
+        <label for="others">others</label><br>
+
+        <label for="mobileNo">Mobile No.:</label>
+        <input type="Number" id="mobileNo" name="MobileNo"><br>
+
+        <button id="Submit" type="submit">Submit</button>
+
+
+
+    </form>
+</body>
+<script>
+
+    
+    function validateForm(){
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == ""){
+            alert("Name cannot be empty");
+            return false;
+        }
+    }
+</script>
+</html>

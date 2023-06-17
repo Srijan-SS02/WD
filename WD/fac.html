@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function calculate() {
+            var num = parseInt(document.getElementById("number").value);
+            var tableResult = document.getElementById("tableResult");
+            var factorialResult = document.getElementById("factorialResult");
+
+            tableResult.innerHTML = "Table:<br>";
+            for (var i = 1; i <= 10; i++) {
+                var result = num * i;
+                tableResult.innerHTML += num + " x " + i + " = " + result + "<br>";
+            }
+
+            var factorial = 1;
+            for (var i = 1; i <= num; i++) {
+                factorial *= i;
+            }
+            factorialResult.innerHTML = "Factorial: " + factorial;
+        }
+    </script>
+</head>
+<body>
+    <h1>Table and Factorial</h1>
+    <label>Enter a number:</label>
+    <input type="number" id="number">
+    <button onclick="calculate()">Calculate</button>
+    <br>
+    <div id="tableResult"></div>
+    <div id="factorialResult"></div>
+</body>
+</html>

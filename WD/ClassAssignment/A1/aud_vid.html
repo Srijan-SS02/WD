@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage with Video and Audio Frames</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #video-frame {
+      width: 100%;
+      height: 400px;
+    }
+    
+    .audio-frame {
+      width: 50%;
+      height: 200px;
+      float: left;
+    }
+    
+    audio {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-frame">
+    <video controls>
+      <source src="your-video-source.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+  <div class="audio-frame">
+    <audio controls>
+      <source src="your-audio-source1.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  
+  <div class="audio-frame">
+    <audio controls>
+      <source src="your-audio-source2.mp3" type="audio/mp3">
+    </audio>
+  </div>
+</body>
+</html>

@@ -5,7 +5,7 @@ def sum(*args):
         
     return result 
 
-print(sum(1,2,3))
+print(sum(1,2,3,4,5,6))
 
 def sum2(*args):
     result = 0

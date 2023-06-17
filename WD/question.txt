@@ -1,7 +1,0 @@
-1. Create a web page for 4th semester coureses. 
-2. Create a webpage an unordered list of names of all the btech program branches in your institutions .
-3. Create a HTML document containig a nested list showing a content page of any book
-
-
-Important question
-1. What is a basic difference in differnet type of css

@@ -1,0 +1,19 @@
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.maincontainer > div{
+    text-align: center;
+    width: 100px;
+}
+
+.banner{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 600;
+}
